@@ -1,0 +1,27 @@
+<div>
+  <h1> {{title}} </h1>
+  <h3> You can get country information through this app. Please input the Country name and click the display button </h3>
+  
+  <form class="text-form">
+    <mat-form-field class="text-full-width">
+      <input matInput [(ngModel)]="searchStr" placeholder="Input Country Name" id="searchStr" name="searchStr"/>       
+    </mat-form-field>
+    <button mat-button color="accent" (click)="getCountryInfo(searchStr)">Search</button>   
+  </form>
+</div>
+
+<table class="data-table">
+  <tr>
+    <td>Name:</td>
+    <td *ngIf="data">{{data.name}}</td> <!-- Display Country Name-->
+  </tr>
+  <tr>
+    <td>alpha2_code:</td>
+    <td *ngIf="data">{{data.alpha2_code}}</td> <!-- Display Country Alpha2 Code-->
+  </tr>
+  <tr>
+    <td>alpha3_code:</td>
+    <td *ngIf="data">{{data.alpha3_code}}</td> <!-- Display Country Alpha3 Code-->
+  </tr>
+</table>
+
