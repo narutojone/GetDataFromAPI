@@ -1,12 +1,12 @@
 <div>
   <h1> {{title}} </h1>
   <h3> You can get country information through this app. Please input the Country name and click the display button </h3>
-  
+
   <form class="text-form">
     <mat-form-field class="text-full-width">
-      <input matInput [(ngModel)]="searchStr" placeholder="Input Country Name" id="searchStr" name="searchStr"/>       
+      <input matInput [(ngModel)]="searchStr" placeholder="Input Country Name" id="searchStr" name="searchStr"/>
     </mat-form-field>
-    <button mat-button color="accent" (click)="getCountryInfo(searchStr)">Search</button>   
+    <button mat-button (click)="getCountryInfo(searchStr)">Search</button>
   </form>
 </div>
 
