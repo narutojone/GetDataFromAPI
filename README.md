@@ -1,4 +1,13 @@
-## Development server
+## Install Project
+
+Run 'npm install @angular/cdk'
+Run 'npm install hammer.js'
+Run 'npm install'
+Run 'ng serve'
+
+(Plus, Most of apis doesn't support access permission. If you have permission error, you should install CROS plugin to access)
+
+# Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
